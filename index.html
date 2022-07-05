@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.play {
+			animation: rotatePinwheel 2s infinite linear;
+		}
+		@keyframes rotatePinwheel {
+			0% { transform: rotate(0); }
+			100% { transform: rotate(360deg); }
+		}
+	</style>
+</head>
+<body>
+	<button class="btn-start" onclick="document.querySelector('.pinwheel').classList.add('play')">Start</button>
+	<button class="btn-stop" onclick="document.querySelector('.pinwheel').classList.remove('play')">Stop</button>
+	<br>
+	<img src="public/images/pinwheel.png" alt="" class="pinwheel play">
+
+</body>
+</html>
